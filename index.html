@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.0-beta1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- Task 1 -->
+    <div class="task1 mt-5">
+      <div class="container">
+        <h3>Bài tập 1: Quản lý Tuyển sinh</h3>
+        <div class="d-flex justify-content-center">
+          <div class="card w-50">
+            <div class="card-header bg-dark text-white text-center">
+              Nhập thông tin
+            </div>
+            <div class="card-body">
+              <div class="form-group">
+                <p class="fw-bold">Điểm các môn</p>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="score1"
+                  placeholder="Điểm môn 1"
+                />
+                <input
+                  type="number"
+                  class="form-control mt-2"
+                  id="score2"
+                  placeholder="Điểm môn 2"
+                />
+                <input
+                  type="number"
+                  class="form-control mt-2"
+                  id="score3"
+                  placeholder="Điểm môn 3"
+                />
+              </div>
+              <div class="form-group">
+                <p class="fw-bold">Điểm ưu tiên</p>
+                <label for="areaPriority">Khu vực</label>
+                <select class="form-control w-25 mb-2" id="areaPriority">
+                  <option>A</option>
+                  <option>B</option>
+                  <option>C</option>
+                  <option>X</option>
+                </select>
+                <label for="personPriority">Đối tượng</label>
+                <select class="form-control w-25 mb-2" id="personPriority">
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>0</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <p class="fw-bold">Điểm chuẩn</p>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="entranceScore"
+                  placeholder="Nhập điểm chuẩn"
+                />
+              </div>
+            </div>
+            <div class="card-footer text-center">
+              <button class="btn btn-secondary" id="showResult">Kết quả</button>
+              <div class="mt-4" id="notiResult"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Task 2 -->
+    <div class="task2 mt-5">
+      <div class="container">
+        <h3>Bài tập 2: Tính tiền điện</h3>
+        <div class="d-flex justify-content-center">
+          <div class="card w-50">
+            <div class="card-header bg-dark text-white text-center">
+              Nhập thông số
+            </div>
+            <div class="card-body">
+              <div class="form-group">
+                <p>Họ tên</p>
+                <input type="text" class="form-control" id="name-t2" />
+              </div>
+              <div class="form-group">
+                <p>Số kW</p>
+                <input type="number" class="form-control" id="kW" />
+              </div>
+            </div>
+            <div class="card-footer text-center">
+              <button class="btn btn-secondary" id="calculateKW">Tính</button>
+              <div class="mt-4" id="notiKW"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Task 3 -->
+    <div class="task3 mt-5">
+      <div class="container">
+        <h3>Bài tập 3: Tính thuế thu nhập cá nhân</h3>
+        <div class="d-flex justify-content-center">
+          <div class="card w-50">
+            <div class="card-header bg-dark text-white text-center">
+              Nhập thông số
+            </div>
+            <div class="card-body">
+              <div class="form-group">
+                <p>Họ tên</p>
+                <input type="text" class="form-control" id="name-t3" />
+              </div>
+              <div class="form-group">
+                <p>Tổng thu nhập năm</p>
+                <input type="number" class="form-control" id="totalIncome" />
+              </div>
+              <div class="form-group">
+                <p>Người phụ thuộc</p>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="numIndependence"
+                />
+              </div>
+            </div>
+            <div class="card-footer text-center">
+              <button class="btn btn-secondary" id="calculateTax">Tính</button>
+              <div class="mt-4" id="notiTax"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Task 4 -->
+    <div class="task4 mt-5">
+      <div class="container">
+        <h3>Bài tập 4: Tính tiền cáp</h3>
+        <div class="d-flex justify-content-center">
+          <div class="card w-50">
+            <div class="card-header bg-dark text-white text-center">
+              Nhập thông số
+            </div>
+            <div class="card-body">
+              <div class="form-group">
+                <p>Họ tên</p>
+                <input type="text" class="form-control" id="name-t4" />
+              </div>
+              <div class="form-group">
+                <label for="typeCustomer">Chọn loại khách hàng</label>
+                <select class="form-control w-25 mb-2" id="typeCustomer">
+                  <option>Chọn loại khách hàng</option>
+                  <option>Nhà Dân</option>
+                  <option>Doanh Nghiệp</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <p>Số kênh cao cấp</p>
+                <input type="number" class="form-control" id="highendChannel" />
+              </div>
+              <div class="form-group">
+                <p>Số kết nối</p>
+                <input type="number" class="form-control" id="numConnection" />
+              </div>
+            </div>
+            <div class="card-footer text-center">
+              <button class="btn btn-secondary" id="calculateCabPayment">
+                Tính Tiền Cáp
+              </button>
+              <div class="mt-4" id="notiCabPayment"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+      integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+      integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- external js file -->
+    <script src="./main.js"></script>
+  </body>
+</html>
